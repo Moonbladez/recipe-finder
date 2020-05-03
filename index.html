@@ -5,33 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b8e7b436cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
     <title>Meal Finder</title>
 </head>
 
-<body>
-    <main class="container">
+<nav>
+    <div class="nav-wrapper indigo">
+        <a href="#" class="brand-logo center">Recipe Finder</a>
+    </div>
+</nav>
+
+<body class="blue-grey lighten-5">
+    <main class="container ">
         <h1>Meal Finder</h1>
-        <div class="flex">
-            <form action="" class="flex" id="submit">
+        <div class="row">
+            <form action="" id="submit" class="col s11">
                 <input type="text" class="search" placeholder="Search for meals or keyword">
-                <button class="search__btn" type="">
+                <button class="search__btn btn" type="">
                     <i class="fal fa-search"></i>
                 </button>
             </form>
-            <button class="random__btn"><i class="fal fa-random"></i></button>
+            <button class="random__btn btn col s1 pulse light-blue accent-4"><i class="fal fa-random"></i></button>
         </div>
-
         <div class="result__heading"></div>
-        <div class="meals"></div>
-        <div class="meals__single">
-        </div>
+        <div class="meals row"></div>
+        <div class="meals__single row"></div>
 
 
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script src="app.js"></script>
 </body>
